@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="./css/utils.css" />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/modals.css" />
     <link rel="stylesheet" href="./css/mediaQuery.css" />
     <link rel="stylesheet" href="./css/animations.css" />
-    <link rel="stylesheet" href="./css/modals.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -248,8 +248,16 @@
             </div>
           </div>
           <ul class="controls">
-            <li class="prev"></li>
-            <li class="next"></li>
+            <li class="prev">
+              <svg class="" width="46" height="7">
+                <use href="./images/sprite.svg#icon-arrow-left"></use>
+              </svg>
+            </li>
+            <li class="next">
+              <svg class="" width="92" height="7">
+                <use href="./images/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </li>
           </ul>
         </div>
       </section>
@@ -318,7 +326,11 @@
 
     <div class="backdrop is-hidden price">
       <div class="price-modal modal">
-        <button class="price-modal__close-button"></button>
+        <button class="price-modal__close-button">
+          <svg class="" width="70" height="11">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
         <h2 class="price-modal__title">
           Щоб дізнатися ціни - залиште свої контакти
         </h2>
@@ -347,7 +359,91 @@
       </div>
     </div>
     <div class="backdrop is-hidden catalog">
-      <div class="catalog-modal modal"></div>
+      <div class="catalog-modal modal">
+        <button class="catalog-modal__close-button">
+          <svg class="" width="70" height="11">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <div class="catalog-modal__image-thumb">
+          <img
+            src="./images/catalog-sm315.png"
+            alt="catalog"
+            srcset="
+              ./images/catalog-sm315.png 315w,
+              ./images/catalog-lg408.png 408w,
+              ./images/catalog-sm630.png 630w,
+              ./images/catalog-lg814.png 814w
+            "
+            sizes="(min-width: 1440px) 407px, 315px"
+          />
+        </div>
+        <h2 class="catalog-modal__title">
+          Тканина бязь кольорова 100% бавовна
+        </h2>
+        <h3 class="sizes-title">Розміри:</h3>
+        <ul class="sizes-list">
+          <li class="sizes-list__item">
+            <h4 class="sizes-list__title">Полуторний:</h4>
+            <ul class="sheets-list">
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Підодіяльник 150х210</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Простинь 150х210</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Наволочки 70х70 2шт</p>
+              </li>
+            </ul>
+          </li>
+          <li class="sizes-list__item">
+            <h4 class="sizes-list__title">Двоспальний:</h4>
+            <ul class="sheets-list">
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Підодіяльник 180х210</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Простинь 200х220</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Наволочки 70х70 2шт</p>
+              </li>
+            </ul>
+          </li>
+          <li class="sizes-list__item">
+            <h4 class="sizes-list__title">Євро розмір:</h4>
+            <ul class="sheets-list">
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Підодіяльник 200х220</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Простинь 200х220</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Наволочки 70х70 2шт</p>
+              </li>
+            </ul>
+          </li>
+          <li class="sizes-list__item">
+            <h4 class="sizes-list__title">Сімейний розмір:</h4>
+            <ul class="sheets-list">
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Підодіяльник 150х210 2шт</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Простинь 220х240</p>
+              </li>
+              <li class="sheets-list__item">
+                <p class="sheets-list__text">Наволочки 70х70 2шт</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="button catalog-modal__button">
+          Дізнатись ціни
+        </button>
+      </div>
     </div>
     <div class="backdrop is-hidden cooperation">
       <div class="cooperation-modal modal"></div>

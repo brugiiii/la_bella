@@ -188,47 +188,9 @@
 .controls {
   display: flex;
   justify-content: flex-end;
-  gap: 158px;
+  gap: 20px;
 
   margin-top: 25px;
-}
-
-.prev,
-.next {
-  display: block;
-  width: 5px;
-  height: 5px;
-  border-top: 1.4px solid #000;
-  border-left: 1.4px solid;
-
-  cursor: pointer;
-}
-
-.prev {
-  transform: rotate(-45deg);
-}
-.next {
-  transform: rotate(135deg);
-}
-
-.prev::after,
-.next::after {
-  content: "";
-  display: block;
-  width: 1px;
-  background-color: black;
-  left: 0;
-  top: 0;
-}
-
-.prev::after {
-  height: 46px;
-  transform: rotate(-45deg) translate(16px, 6px);
-}
-
-.next::after {
-  height: 92px;
-  transform: rotate(-45deg) translate(32px, 13px);
 }
 
 .cooperation-section__title {

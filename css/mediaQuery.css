@@ -222,6 +222,74 @@
 
     margin-bottom: 26px;
   }
+
+  .price-modal {
+    width: 900px;
+    padding: 114px 0 82px 167px;
+  }
+
+  .price-modal__close-button {
+    top: 40px;
+    left: 60px;
+  }
+
+  .price-modal__title {
+    width: 100%;
+    font-size: 24px;
+
+    margin-bottom: 36px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .contacts-form {
+    width: 407px;
+  }
+
+  .contacts-form__field:first-child,
+  .contacts-form__field {
+    margin-bottom: 36px;
+  }
+
+  .contacts-form__input {
+    height: 55px;
+  }
+
+  .contacts-form__label {
+    font-size: 20px;
+
+    margin-bottom: 18px;
+  }
+
+  .license-field {
+    margin-bottom: 20px;
+  }
+
+  .license-text {
+    font-size: 12px;
+  }
+
+  .contacts-form__button {
+    height: 60px;
+
+    font-size: 20px;
+    line-height: calc(36 / 20);
+  }
+
+  .catalog-modal {
+    height: auto;
+    width: 1046px;
+
+    padding: 70px 45px 93px;
+  }
+
+  .catalog-modal__image-thumb {
+    width: 405px;
+    height: 230px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 1439px) {
