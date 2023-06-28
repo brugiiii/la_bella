@@ -25,12 +25,22 @@
   color: #1e1e1e;
 }
 
-.line {
+.cooperation-modal__line,
+.price-modal__line {
   display: block;
   height: 1px;
   background-color: #402b22;
 
   margin-bottom: 60px;
+}
+
+.price-modal__line {
+  margin-bottom: 60px;
+}
+
+.cooperation-modal__line {
+  width: 288px;
+  margin: 0 auto 32px;
 }
 
 .contacts-form__field {
@@ -200,6 +210,7 @@
 
 .sheets-list__text {
   font-size: 16px;
+  margin-bottom: 0;
 }
 
 .catalog-modal__button {
@@ -207,4 +218,124 @@
   height: 43px;
 
   font-size: 16px;
+}
+
+.cooperation-modal {
+  padding: 60px 16px 57px;
+  height: 70%;
+
+  overflow: scroll;
+}
+
+.cooperation-modal__title {
+  margin-bottom: 13px;
+
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: #402b22;
+}
+
+.radio-list {
+  margin-bottom: 30px;
+}
+
+.radio-list__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.radio-list__title {
+  margin-bottom: 22px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.radio-list__fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-list__field:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.radio-list__label {
+  font-size: 18px;
+  line-height: calc(28 / 18);
+}
+
+.credentials-list {
+  margin-bottom: 30px;
+}
+
+.credentials-list__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.credentials-list__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.credentials-list__label {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.credentials-list__input {
+  height: 44px;
+
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.textarea-field {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea-label {
+  width: 287px;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.textarea-label--margin {
+  margin-bottom: 18px;
+}
+
+.cooperation-form__textarea {
+  height: 130px;
+
+  background-color: transparent;
+  border: 1px solid #000;
+  resize: none;
+}
+
+.cooperation-form__button {
+  height: 44px;
+  padding: 0 52px;
+
+  font-size: 16px;
+  line-height: calc(36 / 16);
+}
+
+.cooperation-modal__close-button {
+  position: absolute;
+  top: 19px;
+  left: 30px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }

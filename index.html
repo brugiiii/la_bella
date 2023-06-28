@@ -334,7 +334,7 @@
         <h2 class="price-modal__title">
           Щоб дізнатися ціни - залиште свої контакти
         </h2>
-        <span class="line"></span>
+        <span class="price-modal__line"></span>
         <form class="contacts-form">
           <label class="contacts-form__field">
             <span class="contacts-form__label">Ваше імʼя</span>
@@ -440,13 +440,117 @@
             </ul>
           </li>
         </ul>
-        <button type="button" class="button catalog-modal__button">
+        <button
+          type="button"
+          class="button catalog-modal__button"
+          id="price-button"
+        >
           Дізнатись ціни
         </button>
       </div>
     </div>
     <div class="backdrop is-hidden cooperation">
-      <div class="cooperation-modal modal"></div>
+      <div class="cooperation-modal modal">
+        <button class="cooperation-modal__close-button">
+          <svg class="" width="70" height="11">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+
+        <h2 class="cooperation-modal__title">форма для співпраці</h2>
+
+        <span class="cooperation-modal__line"></span>
+
+        <form class="cooperation-form">
+          <ul class="radio-list">
+            <li class="radio-list__item">
+              <h3 class="radio-list__title">Яка співпраця Вас цікавить?</h3>
+              <div class="radio-list__fields">
+                <label class="radio-list__field">
+                  <input type="radio" name="cooperation-type" value="Опт" />
+                  <span class="radio-list__label">Опт </span>
+                </label>
+                <label class="radio-list__field">
+                  <input
+                    type="radio"
+                    name="cooperation-type"
+                    value="Дропшипінг"
+                  />
+                  <span class="radio-list__label">Дропшипінг</span>
+                </label>
+              </div>
+            </li>
+            <li class="radio-list__item">
+              <h3 class="radio-list__title radio-list__title--margin">
+                У Вас є діючий магазин?
+              </h3>
+              <div class="radio-list__fields radio-list__fields--gap">
+                <label class="radio-list__field">
+                  <input type="radio" name="shop" value="Онлайн" />
+                  <span class="radio-list__label">Онлайн</span>
+                </label>
+                <label class="radio-list__field">
+                  <input type="radio" name="shop" value="Оффлайн" />
+                  <span class="radio-list__label">Оффлайн</span>
+                </label>
+                <label class="radio-list__field">
+                  <input type="radio" name="shop" value="Планую" />
+                  <span class="radio-list__label">Планую</span>
+                </label>
+              </div>
+            </li>
+          </ul>
+          <label class="textarea-field">
+            <h3 class="textarea-label">
+              З яким асортиментом товару Ви працюєте?
+            </h3>
+            <textarea
+              name="assortment"
+              class="cooperation-form__textarea"
+            ></textarea>
+          </label>
+          <ul class="credentials-list">
+            <li class="credentials-list__item">
+              <label class="credentials-list__field"
+                ><span class="credentials-list__label">Ваше імʼя</span
+                ><input type="text" class="credentials-list__input"
+              /></label>
+            </li>
+            <li class="credentials-list__item">
+              <label class="credentials-list__field"
+                ><span class="credentials-list__label">Ваше місто</span
+                ><input type="text" class="credentials-list__input"
+              /></label>
+            </li>
+            <li class="credentials-list__item">
+              <label class="credentials-list__field"
+                ><span class="credentials-list__label">Номер телефону</span
+                ><input type="tel" class="credentials-list__input"
+              /></label>
+            </li>
+          </ul>
+          <label class="textarea-field textarea-field--margin">
+            <h3 class="textarea-label textarea-label--margin">
+              Ваше повідомлення (необов'язково)
+            </h3>
+            <textarea
+              name="user-message"
+              class="cooperation-form__textarea cooperation-form__textarea--margin"
+            ></textarea>
+          </label>
+          <label class="license-field">
+            <input type="checkbox" class="checkbox" />
+            <span class="checkmark"></span>
+            <span class="license-text"
+              >Натискаючи на кнопку ви погоджуєтесь на політику
+              конфіденційності</span
+            ></label
+          >
+          <button type="submit" class="button cooperation-form__button">
+            Відправити
+          </button>
+        </form>
+      </div>
     </div>
 
     <!-- slickSlider -->

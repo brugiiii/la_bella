@@ -69,6 +69,7 @@ body {
   background-color: rgba(0, 0, 0, 0.32);
   opacity: 1;
   visibility: visible;
+  z-index: 1000;
 
   transition: opacity 250ms linear, visibility 250ms linear;
 }

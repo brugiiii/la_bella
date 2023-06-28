@@ -6,13 +6,18 @@ const refs = {
   closeCatalogModalButton: document.querySelector(
     ".catalog-modal__close-button"
   ),
-  showPriceButton: document.querySelector("#price-button"),
+  closeCooperationModalButton: document.querySelector(
+    ".cooperation-modal__close-button"
+  ),
+  showPriceButton: document.querySelectorAll("#price-button"),
   showCatalogButtons: document.querySelectorAll(".catalog-list__button"),
   showCooperationButton: document.querySelector(".cooperation__button"),
   bodyEl: document.querySelector("body"),
 };
 
-refs.showPriceButton.addEventListener("click", showPriceModal);
+refs.showPriceButton.forEach((button) =>
+  button.addEventListener("click", showPriceModal)
+);
 refs.showCatalogButtons.forEach((button) =>
   button.addEventListener("click", showCataloModal)
 );
@@ -20,6 +25,10 @@ refs.showCooperationButton.addEventListener("click", showCooperationModal);
 
 refs.closePriceModalButton.addEventListener("click", hidePriceModal);
 refs.closeCatalogModalButton.addEventListener("click", hideCatalogModal);
+refs.closeCooperationModalButton.addEventListener(
+  "click",
+  hideCooperationModal
+);
 
 refs.priceBackdrop.addEventListener("click", (e) => {
   if (e.target === e.currentTarget) {
@@ -40,6 +49,7 @@ refs.cooperationBackdrop.addEventListener("click", (e) => {
 });
 
 function showPriceModal() {
+  hideCatalogModal();
   refs.priceBackdrop.classList.remove("is-hidden");
   disableWindowScroll();
 

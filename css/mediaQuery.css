@@ -240,7 +240,7 @@
     margin-bottom: 36px;
   }
 
-  .line {
+  .price-modal__line {
     display: none;
   }
 
@@ -288,7 +288,143 @@
   .catalog-modal__image-thumb {
     width: 405px;
     height: 230px;
+    margin: 0 auto 30px;
+  }
+
+  .catalog-modal__title {
+    width: auto;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .sizes-title {
+    margin-bottom: 36px;
+
+    font-size: 22px;
+  }
+
+  .sizes-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .sizes-list__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .sizes-list__title {
+    font-size: 22px;
+  }
+
+  .heets-list__text {
+    font-size: 18px;
+  }
+
+  .catalog-modal__button {
+    height: 44px;
+    padding: 0 32px;
+
+    font-size: 20px;
+  }
+
+  .cooperation-modal {
+    width: 900px;
+    padding: 78px 120px 104px;
+  }
+  .cooperation-modal__close-button {
+    top: 29px;
+    left: 60px;
+  }
+
+  .cooperation-modal__line {
+    width: auto;
+  }
+
+  .cooperation-modal__title {
+    margin-bottom: 20px;
+
+    font-size: 44px;
+  }
+
+  .cooperation-form {
+    width: 566px;
     margin: 0 auto;
+  }
+
+  .radio-list {
+    margin-bottom: 36px;
+  }
+
+  .radio-list__item:not(:last-child) {
+    margin-bottom: 46px;
+  }
+
+  .radio-list__title {
+    margin-bottom: 18px;
+  }
+
+  .radio-list__title--margin {
+    margin-bottom: 28px;
+  }
+
+  .radio-list__fields {
+    flex-direction: row;
+  }
+
+  .radio-list__fields {
+    gap: 146px;
+  }
+
+  .radio-list__field:not(:last-child) {
+    margin: 0;
+  }
+
+  .radio-list__fields--gap {
+    gap: 112px;
+  }
+
+  .textarea-label {
+    width: auto;
+    margin-bottom: 18px;
+
+    font-size: 20px;
+  }
+
+  .cooperation-form__textarea {
+    height: 165px;
+  }
+
+  .textarea-field {
+    margin-bottom: 36px;
+  }
+
+  .textarea-field--margin {
+    margin-bottom: 40px;
+  }
+
+  .credentials-list {
+    margin-bottom: 36px;
+    width: 407px;
+  }
+
+  .credentials-list__item:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  .credentials-list__label {
+    margin-bottom: 18px;
+
+    font-size: 20px;
+  }
+
+  .cooperation-form__button {
+    height: 60px;
+
+    font-size: 20px;
+    line-height: calc(36 / 20);
   }
 }
 
