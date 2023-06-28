@@ -1,3 +1,9 @@
+@media screen and (min-width: 1460px) {
+  .gallery-container {
+    max-width: 1460px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   .section {
     padding-top: 130px;
@@ -21,10 +27,6 @@
   .hero__container {
     width: 1184px;
     padding: 0 10px;
-  }
-
-  .gallery-container {
-    max-width: 1460px;
   }
 
   .logo {
