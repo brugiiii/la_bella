@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- main styles -->
+    <link rel="stylesheet" href="./css/utils.css" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mediaQuery.css" />
+    <link rel="stylesheet" href="./css/animations.css" />
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@600&family=Montserrat:wght@500&family=Rasa:wght@500&display=swap"
       rel="stylesheet"
@@ -37,40 +50,49 @@
 
     <main>
       <section class="hero" id="index">
-        <div class="container">
-          <h1 class="hero__title">
+        <div class="container hero__container">
+          <h1 class="hero__title" style="font-weight: 500">
             Замовляйте постільну білизну
-            <b>оптом та по дропшипінгу</b> на пряму від виробника
+            <b style="font-weight: 700">оптом та по дропшипінгу</b> на пряму від
+            виробника
           </h1>
           <button type="button" class="button hero__button">
             Дізнатись ціни
           </button>
           <ul class="benefits-list">
             <li class="benefits-list__item">
-              <img src="./images/pexels-photo-6453930 1.png" alt="" />
+              <div class="benefits-list__image-thumb">
+                <img src="./images/pexels-photo-6453930 1.png" alt="" />
+              </div>
               <p class="benefits-list__text">Приємне на дотик</p>
             </li>
             <li class="benefits-list__item">
-              <img src="./images/Ellipse 2.png" alt="" />
+              <div class="benefits-list__image-thumb">
+                <img src="./images/Ellipse 2.png" alt="" />
+              </div>
               <p class="benefits-list__text">Тільки натуральні матеріали</p>
             </li>
             <li class="benefits-list__item">
-              <img src="./images/Ellipse 3.png" alt="" />
+              <div class="benefits-list__image-thumb">
+                <img src="./images/Ellipse 3.png" alt="" />
+              </div>
               <p class="benefits-list__text">Зберігає колір після прання</p>
             </li>
             <li class="benefits-list__item">
-              <img src="./images/Ellipse 4.png" alt="" />
+              <div class="benefits-list__image-thumb">
+                <img src="./images/Ellipse 4.png" alt="" />
+              </div>
               <p class="benefits-list__text">Не садиться, не ліняє</p>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section section--padding-top" id="benefits">
+      <section class="section benefits-section" id="benefits">
         <div class="container">
-          <h2 class="section__title">Чому ми?</h2>
-          <div class="section-info">
+          <h2 class="section__title benefits-section__title">Чому ми?</h2>
+          <div class="benefits-section__content">
             <div class="section-info__left">
-              <p class="section__text">
+              <p class="benefits-section__text">
                 Обирайте нашу компанію і отримайте низку переваг, що роблять нас
                 найкращим вибором для замовлення постільної білизни оптом
               </p>
@@ -119,13 +141,23 @@
           </div>
         </div>
       </section>
-      <section class="section" id="catalog">
+      <section class="section catalog-section" id="catalog">
         <div class="container">
           <h2 class="section__title catalog-section__title">КАТАЛОГ</h2>
           <ul class="catalog-list">
             <li class="catalog-list__item">
               <div class="catalog-list__image-thumb">
-                <img src="./images/Rectangle 6.png" alt="" />
+                <img
+                  src="./images/catalog-sm315.png"
+                  alt="catalog"
+                  srcset="
+                    ./images/catalog-sm315.png 315w,
+                    ./images/catalog-lg408.png 408w,
+                    ./images/catalog-sm630.png 630w,
+                    ./images/catalog-lg814.png 814w
+                  "
+                  sizes="(min-width: 1440px) 407px, 315px"
+                />
               </div>
               <h3 class="catalog-list__title">
                 Тканина бязь кольорова 100% бавовна
@@ -136,7 +168,17 @@
             </li>
             <li class="catalog-list__item">
               <div class="catalog-list__image-thumb">
-                <img src="./images/Rectangle 6.png" alt="" />
+                <img
+                  src="./images/catalog-sm315.png"
+                  alt="catalog"
+                  srcset="
+                    ./images/catalog-sm315.png 315w,
+                    ./images/catalog-lg408.png 408w,
+                    ./images/catalog-sm630.png 630w,
+                    ./images/catalog-lg814.png 814w
+                  "
+                  sizes="(min-width: 1440px) 407px, 315px"
+                />
               </div>
               <h3 class="catalog-list__title">Тканина полікотон 70% бавовни</h3>
               <button class="catalog-list__button button">
@@ -145,7 +187,17 @@
             </li>
             <li class="catalog-list__item">
               <div class="catalog-list__image-thumb">
-                <img src="./images/Rectangle 6.png" alt="" />
+                <img
+                  src="./images/catalog-sm315.png"
+                  alt="catalog"
+                  srcset="
+                    ./images/catalog-sm315.png 315w,
+                    ./images/catalog-lg408.png 408w,
+                    ./images/catalog-sm630.png 630w,
+                    ./images/catalog-lg814.png 814w
+                  "
+                  sizes="(min-width: 1440px) 407px, 315px"
+                />
               </div>
               <h3 class="catalog-list__title">
                 Тканина турецький сатин 100% бавовна
@@ -158,31 +210,54 @@
         </div>
       </section>
       <section class="section gallery">
-        <div class="gallery-container">
+        <div class="container gallery-container">
           <h2 class="visually-hidden">Gallery</h2>
-          <ul class="gallery-list">
-            <li class="gallery-list__item">
-              <img src="./images/Rectangle 205.jpg" alt="" />
-            </li>
-            <li class="gallery-list__item">
-              <img src="./images/Rectangle 204.jpg" alt="" />
-            </li>
-            <li class="gallery-list__item">
-              <img src="./images/Rectangle 207.jpg" alt="" />
-            </li>
-            <li class="gallery-list__item">
-              <img src="./images/Rectangle 208.jpg" alt="" />
-            </li>
-            <li class="gallery-list__item">
-              <img src="./images/Rectangle 209.jpg" alt="" />
-            </li>
+          <div class="slick-slider">
+            <div class="gallery-list__item">
+              <img src="./images/gallery1-sm375.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery2-sm375.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery3-sm375.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery4-sm375.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery5-sm375.jpg" alt="" />
+            </div>
+          </div>
+          <div class="gallery-list">
+            <div class="gallery-list__item">
+              <img src="./images/gallery1-lg922.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery2-lg498.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery3-lg464.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery4-lg438.jpg" alt="" />
+            </div>
+            <div class="gallery-list__item">
+              <img src="./images/gallery5-lg498.jpg" alt="" />
+            </div>
+          </div>
+          <ul class="controls">
+            <li class="prev"></li>
+            <li class="next"></li>
           </ul>
         </div>
       </section>
-      <section class="section cooperation">
+      <section class="section section--padding-bottom cooperation">
         <div class="container cooperation__container">
           <div class="cooperation__left-side">
-            <h2 class="section__title">Хочете почати співпрацю?</h2>
+            <h2 class="section__title cooperation-section__title">
+              Хочете почати співпрацю?
+            </h2>
             <p class="cooperation__text">
               Заповніть, будь ласка, наступну форму, і наш менеджер зв'яжеться з
               вами протягом 15 хвилин
@@ -192,7 +267,17 @@
             </button>
           </div>
           <div class="cooperation__image-thumb">
-            <img src="./images/Rectangle 201.png" alt="" />
+            <img
+              src="./images/cooperation-sm315.png"
+              alt=""
+              srcset="
+                ./images/cooperation-sm315.png   315w,
+                ./images/cooperation-lg513.png   513w,
+                ./images/cooperation-sm630.png   630w,
+                ./images/cooperation-lg1026.png 1026w
+              "
+              sizes="(min-width: 1440px) 513px, 315px "
+            />
           </div>
         </div>
       </section>
@@ -206,21 +291,21 @@
         <ul class="socials-list">
           <li>
             <a href="" class="socials-list__link"
-              ><svg class="" width="25" height="25">
+              ><svg class="socials-list__icon" width="25" height="25">
                 <use href="./images/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="" class="socials-list__link"
-              ><svg class="" width="25" height="25">
+              ><svg class="socials-list__icon" width="25" height="25">
                 <use href="./images/sprite.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="" class="socials-list__link"
-              ><svg class="" width="23" height="23">
+              ><svg class="socials-list__icon" width="23" height="23">
                 <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
@@ -230,6 +315,21 @@
       </div>
     </footer>
 
+    <div class="backdrop is-hidden price"><div class="modal"></div></div>
+    <!-- slickSlider -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!-- main scripts -->
+
     <script src="./js/header-scroll.js"></script>
+    <script src="./js//slickSlider.js"></script>
   </body>
 </html>

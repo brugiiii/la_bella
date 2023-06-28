@@ -1,0 +1,32 @@
+.container {
+  margin: 0 auto;
+
+  max-width: 375px;
+  padding: 0 30px;
+}
+
+.section {
+  padding-top: 80px;
+  background-color: #fbf7ef;
+}
+
+.section__title {
+  font-size: 32px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  color: #402b22;
+}
+
+.button {
+  color: #fff;
+  font-size: 20px;
+  font-family: inherit;
+
+  border: none;
+  background-color: #402b22;
+
+  cursor: pointer;
+
+  transition: background-color 200ms linear;
+}

@@ -1,0 +1,21 @@
+.button:hover,
+.button:focus {
+  background-color: tomato;
+}
+
+.socials-list__link:hover,
+.socials-list__link:focus {
+  color: tomato;
+}
+
+.logo:hover,
+.footer__logo:hover,
+.logo:focus,
+.footer__logo:focus {
+  filter: brightness(75%);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: tomato;
+}

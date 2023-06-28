@@ -1,0 +1,251 @@
+@media screen and (min-width: 1440px) {
+  .section {
+    padding-top: 130px;
+  }
+
+  .section .section__title {
+    margin-bottom: 26px;
+
+    font-size: 44px;
+  }
+
+  .section--padding-bottom {
+    padding-bottom: 130px;
+  }
+
+  .container {
+    max-width: 1281px;
+    padding: 0 10px;
+  }
+
+  .hero__container {
+    width: 1184px;
+    padding: 0 10px;
+  }
+
+  .gallery-container {
+    max-width: 1460px;
+  }
+
+  .logo {
+    width: 180px;
+    margin-left: 48px;
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .hero {
+      padding: 274px 0 80px;
+
+      background-image: linear-gradient(0deg, #402b2250 0%, #402b2250 100%),
+        url(../images/overlay-lg1440.jpg);
+
+      max-width: 1440px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .hero {
+        background-image: url(../images/overlay-lg2880.jpg);
+      }
+    }
+  }
+
+  .hero__title {
+    width: 792px;
+    margin-bottom: 40px;
+
+    font-size: 42px;
+    line-height: calc(52 / 42);
+  }
+
+  .hero__button {
+    margin-bottom: 120px;
+    padding: 0 62px;
+
+    height: 60px;
+
+    line-height: calc(36 / 20);
+  }
+
+  .benefits-list {
+    flex-direction: row;
+  }
+
+  .benefits-list__item:first-child {
+    gap: 21px;
+  }
+
+  .benefits-list__image-thumb {
+    width: 70px;
+    height: 70px;
+  }
+
+  .benefits-list__text {
+    font-size: 20px;
+  }
+
+  .benefits-section__text {
+    width: 100%;
+
+    margin-bottom: 40px;
+
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+
+  .benefits-section-list__item {
+    padding-left: 40px;
+  }
+
+  .benefits-section-list__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .benefits-section-list__title {
+    margin-bottom: 24px;
+
+    font-size: 24px;
+  }
+
+  .benefits-section-list__text {
+    line-height: calc(28 / 18);
+  }
+
+  .benefits-section__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .section-info__left,
+  .benefits-section__gallery {
+    flex-basis: calc((100% - 20px) / 2);
+  }
+
+  .catalog-section__title {
+    width: 199px;
+
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .catalog-list__item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+
+  .catalog-list__image-thumb {
+    width: 407px;
+  }
+
+  .catalog-list__title {
+    font-size: 22px;
+
+    width: 300px;
+  }
+
+  .catalog-list__button {
+    height: 44px;
+  }
+
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .slick-slider {
+    display: none;
+  }
+
+  .controls {
+    display: none;
+  }
+
+  .cooperation__container {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  .cooperation__text {
+    width: 556px;
+
+    font-size: 22px;
+    line-height: calc(28 / 22);
+  }
+
+  .cooperation__image-thumb {
+    width: 513px;
+    height: 382px;
+  }
+
+  .cooperation__image-thumb::before {
+    top: 0;
+    right: -98px;
+    width: 101px;
+  }
+
+  .cooperation__image-thumb::after {
+    left: -837px;
+    width: 840px;
+  }
+
+  .footer {
+    padding: 41px 0 30px;
+  }
+
+  .footer__logo {
+    margin-bottom: 76px;
+  }
+
+  .socials-list {
+    gap: 25px;
+
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .catalog-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .cooperation__left-side {
+    margin-bottom: 50px;
+  }
+  .footer__logo {
+    width: 131px;
+  }
+
+  .socials-list__icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/overlay-sm750.jpeg);
+  }
+}
