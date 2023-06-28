@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/mediaQuery.css" />
     <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/modals.css" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,7 +57,7 @@
             <b style="font-weight: 700">оптом та по дропшипінгу</b> на пряму від
             виробника
           </h1>
-          <button type="button" class="button hero__button">
+          <button type="button" class="button hero__button" id="price-button">
             Дізнатись ціни
           </button>
           <ul class="benefits-list">
@@ -315,7 +316,43 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden price"><div class="modal"></div></div>
+    <div class="backdrop is-hidden price">
+      <div class="price-modal modal">
+        <button class="price-modal__close-button"></button>
+        <h2 class="price-modal__title">
+          Щоб дізнатися ціни - залиште свої контакти
+        </h2>
+        <span class="line"></span>
+        <form class="contacts-form">
+          <label class="contacts-form__field">
+            <span class="contacts-form__label">Ваше імʼя</span>
+            <input type="name" class="contacts-form__input" />
+          </label>
+          <label class="contacts-form__field contacts-form__field--margin">
+            <span class="contacts-form__label">Номер телефону</span>
+            <input type="tel" class="contacts-form__input" />
+          </label>
+          <label class="license-field">
+            <input type="checkbox" class="checkbox" />
+            <span class="checkmark"></span>
+            <span class="license-text"
+              >Натискаючи на кнопку ви погоджуєтесь на політику
+              конфіденційності</span
+            ></label
+          >
+          <button type="submit" class="button contacts-form__button">
+            Відправити
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="backdrop is-hidden catalog">
+      <div class="catalog-modal modal"></div>
+    </div>
+    <div class="backdrop is-hidden cooperation">
+      <div class="cooperation-modal modal"></div>
+    </div>
+
     <!-- slickSlider -->
     <script
       type="text/javascript"
@@ -331,5 +368,6 @@
 
     <script src="./js/header-scroll.js"></script>
     <script src="./js//slickSlider.js"></script>
+    <script src="./js/openModal.js"></script>
   </body>
 </html>

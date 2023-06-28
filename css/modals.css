@@ -1,0 +1,150 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.price-modal {
+  width: 347px;
+
+  border-radius: 22px;
+  background-color: #fbf7ef;
+
+  padding: 30px 16px 66px;
+}
+
+.price-modal__close-button {
+  margin-bottom: 40px;
+}
+
+.price-modal__title {
+  width: 289px;
+  margin: 0 auto 12px;
+
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.418px;
+  text-transform: uppercase;
+
+  color: #1e1e1e;
+}
+
+.line {
+  display: block;
+  height: 1px;
+  background-color: #402b22;
+
+  margin-bottom: 60px;
+}
+.contacts-form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form__field:first-child {
+  margin-bottom: 18px;
+}
+
+.contacts-form__field--margin {
+  margin-bottom: 30px;
+}
+
+.contacts-form__label {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #000;
+}
+
+.contacts-form__input {
+  height: 44px;
+
+  border: 1px solid #000;
+  background-color: transparent;
+}
+
+.license-field {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding-left: 30px;
+  margin-bottom: 16px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: transparent;
+  border: 1px solid #000;
+
+  transform: translateY(-50%);
+}
+
+.license-field:hover ~ .checkmark {
+  background-color: #ccc;
+}
+
+.license-field input:checked ~ .checkmark {
+  background-color: #402b22;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.license-field input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.license-field .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.license-text {
+  width: 265px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 150%;
+
+  color: #000;
+}
+
+.contacts-form__button {
+  padding: 0 52px;
+  height: 44px;
+
+  font-size: 16px;
+  line-height: calc(36 / 16);
+}
